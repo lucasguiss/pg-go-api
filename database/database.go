@@ -11,7 +11,7 @@ import (
 var db *gorm.DB
 
 func StartDB() {
-	str := "host=localhost port=5432 user=postgres password=postgres sslmode=disable dbname=books"
+	str := "host=localhost port=5438 user=postgres password=postgres sslmode=disable dbname=books"
 
 	database, err := gorm.Open(postgres.Open(str), &gorm.Config{})
 	if err != nil {
