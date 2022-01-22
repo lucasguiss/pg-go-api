@@ -101,6 +101,8 @@ func ShowAllBooks(c *gin.Context) {
 
 		return
 	}
+
+	c.JSON(200, books)
 }
 
 func DeleteBook(c *gin.Context) {
